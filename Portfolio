@@ -1,0 +1,14 @@
+<! DOCTYPE HTML>
+
+<style>
+ body
+{
+  font-family:helveticca, sans-seriff;
+  background: url("0.jpeg");
+  background-position: center;
+  background-size:cover;
+  text-align: center;  
+}
+
+</style>
+
