@@ -1,4 +1,5 @@
   
+  
 <!DOCTYPE html>
 
 <head>
@@ -42,7 +43,7 @@
 
 </head>
 
-<body onload =>
+<body onload="startTime();">
 
         <header>
 		<img src="">
@@ -55,5 +56,22 @@
 	</header>
 	
 	<h5>Chester-Choke STYLE</h5>
-
+        
+        <img id="img1" /> 
+        <script>
+        var imgArray = new Array("0.jpeg","2.jpg","6.jpg");
+        var imgCount = 0;
+        function startTime() 
+        {
+          if(imgCount == imgArray.length) 
+         {
+          imgCount = 0;
+         }
+        document.getElementById("img1").src = imgArray[imgCount];
+        imgCount++;
+        setTimeout("startTime()",4000);
+       }
+</script>
+        
+       
 </body>
